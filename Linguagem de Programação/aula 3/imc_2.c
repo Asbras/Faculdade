@@ -1,26 +1,31 @@
-/*
- *Escreva um programa em C/C++ que receba o peso e a altura de N pessoas e calcule:
+/*****************************************************************
+ | Autor: Leonardo Carnio Della Torre                            |
+ | Data:                                                         |
+ | Nome do programa: Calculadora de IMC                          |
+ | Disciplina: Linguagem de Programação                          | 
+ | Professor: Fernando Marco Perez Ramos                         |
+ | Descrição: Escreva um programa em C/C++ que receba o peso e a |
+ | altura de N pessoas e calcule:                                |
+ |                                                               |
+ |  1- Maior peso [ok] 2- Menor peso [ok] 3- Maior altura [ok]   |
+ |  4- Menor altura [ok] 5- Maior IMC [ok] 6- Menor IMC [ok]     |
+ |  7- Média pesos [ok] 8- Média alturas [ok] 9- Média IMCs [ok] |
+ |                                                               |
+ | Atenção: o Usuário deverá informar se deseja parar ou conti-  |
+ | nuar                                                          |
+ ****************************************************************/ 
 
-    Maior peso [ok]
-    Menor peso [ok]
-    Maior altura [ok]
-    Menor altura [ok]
-    Maior IMC [ok]
-    Menor IMC [ok]
-    Média pesos [ok]
-    Média alturas [ok]
-    Média IMCs [ok]
-
-Atenção: O usuário deverá informar o momento que ele deseja parar de digitar os pesos e alturas durante a execução do laço, ou seja, para cada leitura, pergunte ao usuário se ele deseja digitar os dados de mais uma pessoa.
-
-IMC = Peso/Altura^2
- * */
 #include <stdio.h>
 
 // Função para limpar o buffer de entrada
 void limparBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) { }
+}
+
+// Função para calcular IMC
+float calcular_imc(float p, float h){
+    return p / (h * h);
 }
 
 int main(int argc, char *argv[])
@@ -48,7 +53,7 @@ int main(int argc, char *argv[])
         }
 
         // calcular IMCs
-        imc = peso/(altura * altura);
+        imc = calcular_imc(peso, altura); 
 
         // descobrir o maior e menor IMC
         if(maior_imc < imc) maior_imc = imc;

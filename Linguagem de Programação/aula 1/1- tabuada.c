@@ -1,4 +1,14 @@
-// 1. Escreva um programa em C/C++ que implemente quatro tabuadas que você escoler ocupando os quatro quadrantes da tela do computador
+/*****************************************************************
+ | Autor: Leonardo Carnio Della Torre                            |
+ | Data:                                                         |
+ | Nome do programa: Impressora de tabuada                       |
+ | Disciplina: Linguagem de programação                          | 
+ | Professor: Fernando Marco Perez Campos                        |
+ | Descrição: Escreva um programa em C/C++ que implemente quatro |
+ | tabuadas que você escolher ocupando os quatro quadrantes da   |
+ | tela.                                                         |
+ ****************************************************************/
+
 #include <stdio.h>
 
 int main(int argc, char *argv[])

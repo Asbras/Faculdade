@@ -1,7 +1,16 @@
-// Escreva um algoritmo que implemente uma calculadora com quatro operações usando switch case.
-// O usuário deverá entrar com os valores do operandos e da operação e o programa deverá fornecer
-// o resultado.
+/*****************************************************************
+ | Autor: Leonardo Carnio Della Torre                            |
+ | Data:                                                         |
+ | Nome do programa: Calculadora usando switch/case              |
+ | Disciplina: Linguagem de Programação                          | 
+ | Professor: Fernando Marco Perez Ramos                         |
+ | Descrição: Implemente uma calculadora com 4 operações usando  | 
+ | switch case. O usuário deverá entrar com os valores do operan-|
+ | dos e da operação que o programa deverá fornecer o resultado  |
+ ****************************************************************/
+
 #include <stdio.h>
+
 int main(int argc, char *argv[])
 {
     float a, b;
@@ -33,3 +42,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+

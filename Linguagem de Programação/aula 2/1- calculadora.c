@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
     switch (operador) {
         case '+':
             printf("%.2f + %.2f = %.2f\n", a, b, (a+b)); // Imprimir soma dos números digitados
+            printf("DEBUGPRINT[2]: 1- calculadora.c:30 (after printf(%.2f + %.2f = %.2fn, a, b, (a+b))…)\n");
             break;
         case '-':
             printf("%.2f - %.2f = %.2f\n", a, b, (a-b)); // Imprimir subtração dos números digitados

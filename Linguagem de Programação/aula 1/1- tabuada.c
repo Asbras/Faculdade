@@ -11,8 +11,9 @@
 
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main()
 {
+	
     printf("01 x 01 = 01\t\t\t\t\t\t02 x 01 = 02\n");
     printf("01 x 02 = 02\t\t\t\t\t\t02 x 02 = 04\n");
     printf("01 x 03 = 03\t\t\t\t\t\t02 x 03 = 06\n");

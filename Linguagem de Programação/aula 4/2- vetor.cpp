@@ -1,4 +1,4 @@
-/***************************************************************
+/**************************************************************
  * Nome do programa: Programa de Cópia de vetor invertido      *
  * Data: 07 de janeiro de 2024                                 *
  * Autor: Leonardo Carnio Della Torre                          *                 
@@ -16,28 +16,24 @@
 int main () {
     int vetor1[MAX], vetor2[MAX];
 
-    // Ler um vetor de MAX posições
+    // Receber valores do usuário
     for (int i = 0; i < MAX; i++) {
-        printf("Digite o valor %d:\n", i+1);
-        scanf("%d", &vetor1[i]);
+        std::cout << "Digite um valor: " << std::endl;
+        std::cin >> vetor1[i];
     }
-
-    // Fazer uma cópia dos valores do vetor1 para o vetor2
+    
+    // Copiar e inverter os valores do vetor1
     for (int i = 0; i < MAX; i++) {
         vetor2[i] = -vetor1[i]; 
     }
-    printf("Vetor 1:\n");
-    // Imprimir vetor1
+
+    // Imprimir vetor2 para o usuário
+    std::cout << "* * * IMPRIMINDO VETOR COM VALORES INVERTIDOS * * *" << std::endl;
     for (int i = 0; i < MAX; i++) {
-        printf("%d\t", vetor1[i]);
+        std::cout << "[" << vetor2[i] << "]\t";
     }
-    
-    printf("\nVetor 2:\n");
-    // Imprimir vetor2
-    for (int i = 0; i < MAX; i++) {
-        printf("%d\t", vetor2[i]);
-    }
-    printf("\n");
+
+    std::cout << std::endl;
 
     return 0;
 }

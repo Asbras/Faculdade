@@ -7,6 +7,7 @@
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva um programa que pede ao usuário para inserir um número inteiro positivo e calcula o fatorial desse número
   usando um laço de repetição. O programa deve então exibir o resultado.
+
  *****************************************************************************************************************************************/
 
 #include <stdlib.h>

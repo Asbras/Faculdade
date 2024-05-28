@@ -33,6 +33,14 @@ void tipo_triangulo(float a, float b, float c) {
         printf("O triangulo é Isóceles\n");
     }
 }
+
+void pause() {
+    while (getchar()!='\n');
+    printf("Pressione Enter para continuar...");
+    getchar();
+    system("clear || cls");
+}
+
 int main() {
     float lado1, lado2, lado3;
 
@@ -52,6 +60,7 @@ int main() {
     } else {
         printf("As medidas não formam um triangulo\n");
     }
+    pause();
 
     return 0;
 }

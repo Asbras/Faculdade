@@ -7,15 +7,6 @@
   Descrição: Escreva um programa em C que pede ao usuário para inserir um número inteiro positivo e, em seguida, imprime todos os números
   primos menores ou iguais a esse número. Um número primo é um número maior que 1 que só é divisível por 1 e por ele mesmo.
  *****************************************************************************************************************************************/
-/*******************************************************************************************************************************************
-  Autor: Leonardo Carnio Della Torre
-  Data: 28/05/2024
-  Nome do programa: SomaDosDigitos
-  Disciplina: Linguagem de Programação
-  Professor: Fernando Marco Perez Ramo
-  Descrição: Escreva um programa em C que pede ao usuário para inserir um número inteiro positivo e, em seguida, imprime todos os números
-  primos menores ou iguais a esse número. Um número primo é um número maior que 1 que só é divisível por 1 e por ele mesmo.
- *****************************************************************************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// Função para checar se as medidas digitadas pelo usuário fomam um triangulo
 int forma_triangulo(float a, float b, float c) {
     if (a+b>c && a+c>b && b+c> a) {
         return 1;
@@ -23,7 +23,7 @@ int forma_triangulo(float a, float b, float c) {
         return 0;
     }
 }
-
+// Função para classificar o triangulo
 void tipo_triangulo(float a, float b, float c) {
     if (a == b && a == c ) { // Verificar se o triangulo é Equilátero
         printf("O triangulo é equilátero\n");
@@ -36,7 +36,7 @@ void tipo_triangulo(float a, float b, float c) {
 
 void pause() {
     while (getchar()!='\n');
-    printf("Pressione Enter para continuar...");
+    printf("\nPressione Enter para continuar...");
     getchar();
     system("clear || cls");
 }
@@ -44,13 +44,43 @@ void pause() {
 int main() {
     float lado1, lado2, lado3;
 
-    // Receber as medidas digitadas pelo usuário
+    system("clear || cls");
+    // Receber as medidas do primeiro lado
     printf("Digite o tamanho do primeiro lado: ");
     scanf("%f", &lado1);
+
+    // Validar a entrada do primeiro lado com valores maiores que zero
+    while (lado1<=0) {
+        printf("Valor inválido. Digite o tamanho maior do que zero para primeiro lado: ");
+        scanf("%f", &lado1);
+    }
+
+    // limpar a tela
+    system("clear || cls");
+
+    // Receber as medidas do segundo lado
     printf("Digite o tamanho do segundo lado: ");
     scanf("%f", &lado2);
+
+    // Validar a entrada do segundo lado com valores maiores que zero
+    while (lado2<=0) {
+        printf("Valor inválido. Digite o tamanho maior do que zero para segundo lado: ");
+        scanf("%f", &lado2);
+    }
+
+    // limpar a tela
+    system("clear || cls");
+
+    // Receber as medidas do terceiro lado
     printf("Digite o tamanho do terceiro lado: ");
     scanf("%f", &lado3);
+
+    // Validar a entrada do terceiro lado com valores maiores que zero
+    while (lado3<=0) {
+        printf("Valor inválido...\n Digite o tamanho maior do que zero para terceiro lado: ");
+        scanf("%f", &lado3);
+    }
+
     // limpar a tela
     system("clear || cls");
 

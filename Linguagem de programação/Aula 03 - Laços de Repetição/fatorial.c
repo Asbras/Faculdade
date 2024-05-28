@@ -7,7 +7,6 @@
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva um programa que pede ao usuário para inserir um número inteiro positivo e calcula o fatorial desse número
   usando um laço de repetição. O programa deve então exibir o resultado.
-
  *****************************************************************************************************************************************/
 
 #include <stdlib.h>
@@ -36,7 +35,7 @@ int main() {
     printf("Digite um número inteiro para calcular o fatorial: ");
 
 
-    // Validar a entrada para que nao seja um número negativo e nem um numero real
+    // Validar a entrada para que seja digitado um número inteiro positivo
     while (scanf("%d", &numero) != 1 || numero < 0) {
         while (getchar() != '\n');
         printf("Entrada inválida. Digite um número inteiro positivo: ");

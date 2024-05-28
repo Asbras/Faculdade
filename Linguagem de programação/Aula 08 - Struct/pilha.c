@@ -1,13 +1,13 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
-  Data:
+  Data: 28/05/2024
   Nome do programa: Calculadora de IMC
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva o código que implemente uma pilha estática de números inteiros, utilizando struct.
 
  *****************************************************************************************************************************************/
-
+#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 5
@@ -89,13 +89,14 @@ void menu(int *opt) {
 }
 
 
-
-
-
 int main() {
 	TPilha pilha;
 	int opt;
-	
+
+	// Habilitar o uso de acentos
+	setlocale(LC_ALL, "");
+
+	// Inicializar a pilha com o topo=-1
 	inicializar_pilha(&pilha);
 	do {
 		system("clear || cls");
@@ -111,6 +112,5 @@ int main() {
 				imprimir(pilha);
 				break;
 		}
-		
 	}while (opt != 9); // Condição para decidir se o programa deve continuar rodando ou para sair
 }

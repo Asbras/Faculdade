@@ -18,6 +18,7 @@
 #include <stdio.h>
 #define MAX 3
 
+// Função para carregar valores para a matriz
 int carregar(int matriz[][MAX]) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -28,6 +29,7 @@ int carregar(int matriz[][MAX]) {
     return 0;
 }
 
+// Função para calcular a soma de todos os elementos da matriz
 void soma_elementos(int matriz[][MAX], int *soma_elementos) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -36,6 +38,7 @@ void soma_elementos(int matriz[][MAX], int *soma_elementos) {
     }
 }
 
+// Função para calcular a soma de cada linha da matriz
 void soma_linhas(int matriz[][MAX], int *soma_linha_1, int *soma_linha_2, int *soma_linha_3) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -52,6 +55,7 @@ void soma_linhas(int matriz[][MAX], int *soma_linha_1, int *soma_linha_2, int *s
     }
 }
 
+// Função para calcular a soma de cada coluna da matriz
 void soma_colunas(int matriz[][MAX], int *soma_coluna_1, int *soma_coluna_2, int *soma_coluna_3) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -68,18 +72,21 @@ void soma_colunas(int matriz[][MAX], int *soma_coluna_1, int *soma_coluna_2, int
     }
 }
 
+// Função para calcular a soma dos elementos da diagonal principal da matriz
 void soma_diagona_principal(int matriz[][MAX], int *soma_diagonal_principal) {
     for (int i = 0; i < MAX; i++) {
         *soma_diagonal_principal += matriz[i][i];
     }
 }
 
+// Função para calcular a soma dos elementos da diagonal secundária da matriz
 void soma_diagonal_secundaria(int matriz[][MAX], int *soma_diagonal_secundaria) {
     for (int i = 0; i < MAX; i++) {
         *soma_diagonal_secundaria += matriz[i][MAX - 1 - i];
     }
 }
 
+// Função para calcular a matriz transposta da matriz dada
 void matriz_transposta(int matriz[][MAX], int matriz_transposta[][MAX]) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -88,6 +95,7 @@ void matriz_transposta(int matriz[][MAX], int matriz_transposta[][MAX]) {
     }
 }
 
+// Função para imprimir a matriz
 void imprimir(int matriz[][MAX]) {
     for (int i = 0; i < MAX; i++) {
         for (int j = 0; j < MAX; j++) {
@@ -102,15 +110,30 @@ int main() {
     int diagonal_principal = 0, diagonal_secundaria = 0, soma_linha_1 = 0, soma_linha_2 = 0, soma_linha_3 = 0, soma_dos_elemento = 0;
     int soma_coluna_1 = 0, soma_coluna_2 = 0, soma_coluna_3 = 0;
     int transposta[MAX][MAX];
-    int matriz[MAX][MAX] = {1,2,3,4,5,6,7,8,9};
+    int matriz[MAX][MAX];
 
+    // Carregar valores para a matriz
+    carregar(matriz);
+
+    // Calcular a soma de todos os elementos da matriz
     soma_elementos(matriz, &soma_dos_elemento);
+
+    // Calcular a soma de cada linha da matriz
     soma_linhas(matriz, &soma_linha_1, &soma_linha_2, &soma_linha_3);
+
+    // Calcular a soma de cada coluna da matriz
     soma_colunas(matriz, &soma_coluna_1, &soma_coluna_2, &soma_coluna_3);
+
+    // Calcular a soma dos elementos da diagonal principal da matriz
     soma_diagona_principal(matriz, &diagonal_principal);
+
+    // Calcular a soma dos elementos da diagonal secundária da matriz
     soma_diagonal_secundaria(matriz, &diagonal_secundaria);
+
+    // Calcular a matriz transposta da matriz original
     matriz_transposta(matriz, transposta);
 
+    // Imprimir os resultados
     printf("Soma de todos os elementos: %d\n\n", soma_dos_elemento);
     printf("Matriz Transposta:\n");
     imprimir(transposta);
@@ -121,4 +144,3 @@ int main() {
 
     return 0;
 }
-

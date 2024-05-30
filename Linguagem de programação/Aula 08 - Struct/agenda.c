@@ -2,7 +2,7 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data: 28/05/2024
-  Nome do programa: Calculadora de IMC
+  Nome do programa: Agenda
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Implemente uma agenda com os dados: nome e telefone em uma fila utilizando struct.

@@ -1,14 +1,14 @@
 /***************************************************************
- * Nome do programa: Programa de Análise de Temperaturas       *
- * Data: 07 de janeiro de 2024                                 *
- * Autor: Leonardo Carnio Della Torre                          *                 
- * Disciplina: Linguagem de Programação                        *  
- * Professor: Fernando Marco Perez Campos                      *
- * Descrição: Este programa solicita ao usuário que insira     *
- *            10 valores de temperatura, verifica se cada      *
- *            temperatura é quente ou fria e exibe os          *
- *            resultados na tela. Ele também calcula a média,  *
- *            a maior e a menor temperatura digitada.          *
+ * Nome do programa: Programa de Análise de Temperaturas
+ * Data: 07 de janeiro de 2024
+ * Autor: Leonardo Carnio Della Torre
+ * Disciplina: Linguagem de Programação
+ * Professor: Fernando Marco Perez Campos
+ * Descrição: Este programa solicita ao usuário que insira
+ *            10 valores de temperatura, verifica se cada
+ *            temperatura é quente ou fria e exibe os
+ *            resultados na tela. Ele também calcula a média,
+ *            a maior e a menor temperatura digitada.
  ***************************************************************/
 
 #include <stdio.h>

@@ -1,7 +1,7 @@
 /*****************************************************************
  | Autor: Leonardo Carnio Della Torre                            |
  | Data: 24/05/2024                                              |
- | Nome do programa: Impressora de tabuada                       |
+ | Nome do programa: Calculadora de raizes de parabola
  | Disciplina: Linguagem de programação                          | 
  | Professor: Fernando Marco Perez Campos                        |
  | Descrição:  Escreva um programa que leia os valores de A, B   |

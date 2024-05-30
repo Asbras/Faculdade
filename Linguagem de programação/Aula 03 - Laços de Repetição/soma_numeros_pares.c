@@ -1,7 +1,7 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data:
-  Nome do programa: Calculadora de IMC
+  Nome do programa: Soma de numeros pares
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva um programa em C que solicita ao usuário que insira um número inteiro positivo e, em seguida, imprime a soma de todos

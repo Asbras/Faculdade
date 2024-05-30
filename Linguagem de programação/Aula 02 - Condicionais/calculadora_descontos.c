@@ -1,7 +1,7 @@
 /***************************************************************
   Autor: Leonardo Carnio Della Torre
   Data: 27/05/2024
-  Nome do programa: Verificador de Idade
+  Nome do programa: Calculadora de Descontos
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramos
   Descrição: Escreva um programa em C que leia o valor de uma

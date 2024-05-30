@@ -1,7 +1,7 @@
 /****************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data: 27/05/2024
-  Nome do programa: Verificador de Idade
+  Nome do programa: Verificador de Triangulos
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramos
   Descrição: Escreva um programa em C que leia três valores correspondentes aos lados de um triângulo. O programa deve 

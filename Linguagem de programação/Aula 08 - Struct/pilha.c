@@ -1,7 +1,7 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data: 28/05/2024
-  Nome do programa: Calculadora de IMC
+  Nome do programa: Pilha struct
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva o código que implemente uma pilha estática de números inteiros, utilizando struct.

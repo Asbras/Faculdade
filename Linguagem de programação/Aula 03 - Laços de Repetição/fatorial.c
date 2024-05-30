@@ -2,7 +2,7 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data:
-  Nome do programa: Calculadora de IMC
+  Nome do programa: Calculadora de fatorial
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva um programa que pede ao usuário para inserir um número inteiro positivo e calcula o fatorial desse número

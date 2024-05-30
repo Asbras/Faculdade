@@ -1,5 +1,5 @@
 /**************************************************************
- * Nome do programa: Programa de Cópia de vetor invertido      *
+ * Nome do programa: Verificador de temperaturas
  * Data: 07 de janeiro de 2024                                 *
  * Autor: Leonardo Carnio Della Torre                          *                 
  * Disciplina: Linguagem de Programação                        *  

@@ -1,7 +1,7 @@
 /*******************************************************************************************************************************************
   Autor: Leonardo Carnio Della Torre
   Data: 
-  Nome do programa: SomaDosDigitos
+  Nome do programa: Soma dos digitos
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramo
   Descrição: Escreva um programa que pede ao usuário para inserir um número inteiro positivo e calcula a soma dos dígitos desse número

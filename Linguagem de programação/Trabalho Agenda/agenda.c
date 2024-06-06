@@ -16,12 +16,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Função para pausar a execução até que o usuário pressione Enter
-void pausar() {
-	printf("\n\nAperte Enter para continuar...");
-	while (getchar() != '\n');
-	system("clear || cls");  // Limpa a tela (compatível com Unix e Windows)
-}
 
 // Estrutura para armazenar os dados de um contato
 typedef struct {
@@ -35,6 +29,13 @@ typedef struct Agenda {
 	Contato contato;
 	struct Agenda *prox;
 } Agenda;
+
+// Função para pausar a execução até que o usuário pressione Enter
+void pausar() {
+	printf("\n\nAperte Enter para continuar...");
+	while (getchar() != '\n');
+	system("clear || cls");  // Limpa a tela (compatível com Unix e Windows)
+}
 
 // Função para criar uma nova agenda (inicialmente vazia)
 Agenda *criar_agenda() {

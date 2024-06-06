@@ -4,7 +4,7 @@
   Nome do programa: Agenda de contatos
   Disciplina: Linguagem de Programação
   Professor: Fernando Marco Perez Ramos
-  Descrição: uma agenda de contatos em C que permite ao usuário inserir, remover, procurar e mostrar contatos. Cada contato tem campos para nome, endereço e telefone. A agenda armazena os contatos em uma lista ligada ordenada alfabeticamente pelo nome. O programa inclui um menu de opções que permite ao usuário:
+  Descrição: uma agenda de contatos em C que permite ao usuario inserir, remover, procurar e mostrar contatos. Cada contato tem campos para nome, endereço e telefone. A agenda armazena os contatos em uma lista ligada ordenada alfabeticamente pelo nome. O programa inclui um menu de opções que permite ao usuário:
 
     1. Inserir um novo contato na lista.
     2. Remover um contato da lista pelo nome.
@@ -24,13 +24,13 @@ typedef struct {
 	char telefone[50];
 } Contato;
 
-// Estrutura para a agenda, que é uma lista encadeada de contatos
+// Estrutura para a agenda
 typedef struct Agenda {
 	Contato contato;
 	struct Agenda *prox;
 } Agenda;
 
-// Função para pausar a execução até que o usuário pressione Enter
+// Função para pausar a execução até que o usuario pressione Enter
 void pausar() {
 	printf("\n\nAperte Enter para continuar...");
 	while (getchar() != '\n');
@@ -136,13 +136,13 @@ void menu() {
 
 int main() {
 	Agenda *agenda = criar_agenda(); // Cria uma nova agenda vazia
-	int opcao; // Variável para armazenar a escolha do usuário
+	int opcao; // Variável para armazenar a escolha do usuario
 
-	system("clear || cls"); // Limpa a tela (compatível com Unix e Windows)
+	system("clear || cls"); // Limpa a tela
 	do {
 		menu(); // Exibe o menu de opções
 		printf("Escolha uma opcao: ");
-		scanf("%d", &opcao); // Lê a opção escolhida pelo usuário
+		scanf("%d", &opcao); // Lê a opção escolhida pelo usuario
 		getchar();  // Consome o '\n' deixado pelo scanf para evitar problemas com fgets
 		system("clear || cls"); // Limpa a tela após cada entrada
 
@@ -162,17 +162,17 @@ int main() {
 				contato.telefone[strcspn(contato.telefone, "\n")] = '\0';  // Remove o '\n' do final da string
 
 				agenda = inserir_agenda(agenda, contato); // Insere o contato na agenda em ordem alfabética
-				pausar(); // Pausa até que o usuário pressione Enter
+				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 			}
 			case 2: { // Remover contato
 				char nome[50];
 				printf("Nome do contato a ser removido: ");
-				fgets(nome, 50, stdin); // Lê o nome do contato a ser removido
+				fgets(nome, 50, stdin); // Le o nome do contato a ser removido
 				nome[strcspn(nome, "\n")] = '\0';  // Remove o '\n' do final da string
 
 				agenda = remover_agenda(agenda, nome); // Remove o contato da agenda
-				pausar(); // Pausa até que o usuário pressione Enter
+				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 			}
 			case 3: { // Procurar contato
@@ -189,24 +189,24 @@ int main() {
 				} else { // Se o contato não for encontrado
 					printf("Contato nao encontrado\n");
 				}
-				pausar(); // Pausa até que o usuário pressione Enter
+				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 			}
 			case 4: // Mostrar todos os contatos
 				mostrar_agenda(agenda); // Exibe todos os contatos na agenda
-				pausar(); // Pausa até que o usuário pressione Enter
+				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 			case 5: // Sair
 				printf("Saindo...\n");
-				pausar(); // Pausa até que o usuário pressione Enter antes de sair
+				pausar(); // Pausa até que o usuario pressione Enter antes de sair
 				break;
 			default: // Opção inválida
 				printf("Opcao invalida\n");
-				pausar(); // Pausa até que o usuário pressione Enter
+				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 		}
-	} while (opcao != 5); // Continua exibindo o menu até que o usuário escolha a opção de sair
+	} while (opcao != 5); // Continua exibindo o menu até que o usuario escolha a opção de sair
 
-	return 0; // Retorna 0 para indicar que o programa terminou corretamente
+	return 0;
 }
 

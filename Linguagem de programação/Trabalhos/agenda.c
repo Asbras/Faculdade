@@ -131,7 +131,7 @@ void menu() {
 	printf("2. Remover contato\n");
 	printf("3. Procurar contato\n");
 	printf("4. Mostrar agenda\n");
-	printf("5. Sair\n\n");
+	printf("9. Sair\n\n");
 }
 
 int main() {
@@ -205,7 +205,7 @@ int main() {
 				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 		}
-	} while (opcao != 5); // Continua exibindo o menu até que o usuario escolha a opção de sair
+	} while (opcao != 9); // Continua exibindo o menu até que o usuario escolha a opção de sair
 
 	return 0;
 }

@@ -44,7 +44,6 @@ Agenda *criar_agenda() {
 
 // Função para inserir um contato na agenda em ordem alfabética
 Agenda *inserir_agenda(Agenda *agenda, Contato contato) {
-	printf("* * * * * I N S E R I R * * * * *\n\n");
 	// Cria um novo nó para o contato
 	Agenda *novo = (Agenda *)malloc(sizeof(Agenda));
 	strcpy(novo->contato.nome, contato.nome);
@@ -70,7 +69,6 @@ Agenda *inserir_agenda(Agenda *agenda, Contato contato) {
 
 // Função para remover um contato da agenda pelo nome
 Agenda *remover_agenda(Agenda *agenda, char nome[50]) {
-	printf("* * * * * R E M O V E R * * * * *\n\n");
 	// Se a agenda estiver vazia
 	if (agenda == NULL) {
 		return NULL;
@@ -102,7 +100,6 @@ Agenda *remover_agenda(Agenda *agenda, char nome[50]) {
 
 // Função para procurar um contato na agenda pelo nome
 Agenda *procurar_agenda(Agenda *agenda, char nome[50]) {
-	printf("* * * * * P R O C U R A R * * * * *\n\n");
 	Agenda *aux = agenda;
 	while (aux != NULL) {
 		if (strcasecmp(aux->contato.nome, nome) == 0) {
@@ -115,7 +112,6 @@ Agenda *procurar_agenda(Agenda *agenda, char nome[50]) {
 
 // Função para mostrar todos os contatos da agenda
 void mostrar_agenda(Agenda *agenda) {
-	printf("* * * * * I M P R I M I N D O * * * * *\n\n");
 	Agenda *aux = agenda;
 	while (aux != NULL) {
 		printf("Nome: %s\n", aux->contato.nome);
@@ -148,6 +144,7 @@ int main() {
 
 		switch (opcao) { // Executa a ação com base na opção escolhida
 			case 1: { // Inserir contato
+				printf("* * * * * I N S E R I R * * * * *\n\n");
 				Contato contato;
 				printf("Nome: ");
 				fgets(contato.nome, 50, stdin); // Lê o nome do contato
@@ -167,6 +164,7 @@ int main() {
 			}
 			case 2: { // Remover contato
 				char nome[50];
+				printf("* * * * * R E M O V E R * * * * *\n\n");
 				printf("Nome do contato a ser removido: ");
 				fgets(nome, 50, stdin); // Le o nome do contato a ser removido
 				nome[strcspn(nome, "\n")] = '\0';  // Remove o '\n' do final da string
@@ -176,6 +174,7 @@ int main() {
 				break;
 			}
 			case 3: { // Procurar contato
+				printf("* * * * * P R O C U R A R * * * * *\n\n");
 				char nomeProcurado[50];
 				printf("Nome do contato a ser procurado: ");
 				fgets(nomeProcurado, 50, stdin); // Lê o nome do contato a ser procurado
@@ -193,10 +192,11 @@ int main() {
 				break;
 			}
 			case 4: // Mostrar todos os contatos
+				printf("* * * * * C O N T A T O S * * * * *\n\n");
 				mostrar_agenda(agenda); // Exibe todos os contatos na agenda
 				pausar(); // Pausa até que o usuario pressione Enter
 				break;
-			case 5: // Sair
+			case 9: // Sair
 				printf("Saindo...\n");
 				pausar(); // Pausa até que o usuario pressione Enter antes de sair
 				break;

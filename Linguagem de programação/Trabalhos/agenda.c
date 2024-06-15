@@ -197,7 +197,7 @@ int main() {
 				pausar(); // Pausa até que o usuario pressione Enter
 				break;
 			case 9: // Sair
-				printf("Saindo...\n");
+					printf("Saindo...");
 				pausar(); // Pausa até que o usuario pressione Enter antes de sair
 				break;
 			default: // Opção inválida
